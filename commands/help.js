@@ -36,8 +36,7 @@ module.exports = {
       .setTitle('💎 Prime Music Bot')
       .setDescription('Welcome to the Music Bot!\n\n- Here are the available commands:\n\n' +
         '**/play :** Start playing the songs.\n' +
-        '**/ping :** check bot latency.\n' +
-        '**/support :** Display support server info');
+        '**/ping :** check bot latency.);
 
       return interaction.reply({ embeds: [embed] });
     } catch (e) {
