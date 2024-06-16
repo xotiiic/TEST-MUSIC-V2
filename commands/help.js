@@ -33,11 +33,10 @@ module.exports = {
 
       const embed = new EmbedBuilder()
          .setColor('#0099ff')
-      .setTitle('💎 Prime Music Bot')
+      .setTitle('G4yna'🎀 Bot')
       .setDescription('Welcome to the Music Bot!\n\n- Here are the available commands:\n\n' +
         '**/play :** Start playing the songs.\n' +
-        '**/ping :** check bot latency.\n' +
-        '**/support :** Support the owner.');
+        '**/ping :** check bot latency.');
 
       return interaction.reply({ embeds: [embed] });
     } catch (e) {
