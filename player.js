@@ -4,14 +4,16 @@ const { queueNames } = require("./commands/play");
 
 function initializePlayer(client) {
     const nodes = [
-        {
-            host: "lavalink.gglvxd.eu.org",
-            port: 443,
-            password: "https://dsc.gg/idiotspawnpoint",
-            secure: true   
-        },
-    ];
-
+    {
+        name: "Working1",
+        host: "nodev4.fypmoon.org",
+        port: 1118,
+        password: "fypmoon.org",
+        reconnectTimeout: 5000,
+        reconnectTries: Infinity,
+        secure: false
+    },
+ ]
     client.riffy = new Riffy(client, nodes, {
         send: (payload) => {
             const guildId = payload.d.guild_id;
