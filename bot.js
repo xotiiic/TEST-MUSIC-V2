@@ -1,3 +1,4 @@
+
 const { Client, GatewayIntentBits } = require("discord.js");
 const config = require("./config.js");
 const fs = require("fs");
@@ -70,9 +71,7 @@ app.get('/', (req, res) => {
     res.sendFile(imagePath);
 });
 app.listen(port, () => {
-    console.log(`🔗 Listening to Xotiic : http://localhost:${port}`);
+    console.log(`🔗 Listening to GlaceYT : http://localhost:${port}`);
 });
 
 printWatermark();
-
-
